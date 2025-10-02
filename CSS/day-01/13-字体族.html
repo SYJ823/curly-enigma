@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体族</title>
+    <style>
+        /* 作用：设置文字的字体 */
+        /* 语法：font-family: 字体1,字体2,字体3... */
+        /* 说明：多个字体时，浏览器会从左到右依次查找，找到就用该字体显示，找不到就用下一个字体 */
+        /* 注意：字体名称中有空格时，必须用引号括起来 */
+        /* 例如：font-family: "华文细黑", "Microsoft YaHei"; */
+        /* 建议：最后一个字体用通用字体族，网页开发建议使用 sans-serif (无衬线字体) */
+        /* 除此之外还有衬线字体（serif） */
+        div{
+            font-family: "楷体", "KaiTi", "华文楷体", "STKaiti", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>测试文字</div>
+</body>
+</html>

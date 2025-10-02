@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font复合属性</title>
+    <style>
+        /* 作用：设置文字的字体、大小、行高等 */
+        /* 语法：font: [font-style] [font-variant] [font-weight] [font-size] [line-height] [font-family] */
+        /* 从左到右分别是字体样式、字体变体、字体粗细、字体大小、行高、字体族 */
+        /* 说明：字号和字体必须写，其他属性可以省略，省略时使用默认值 必须按顺序书写 */
+        /* 注意：font属性必须写在一行中，不能分开写 */
+        div{
+            font: italic normal bold 20px/30px "楷体", "Microsoft YaHei", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>测试文字</div>
+</body>
+</html>
