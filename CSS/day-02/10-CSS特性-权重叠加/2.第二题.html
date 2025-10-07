@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>权重叠加-第二题</title>
+    <style>
+        /* (0,0,0,2) */
+        div p {
+            color: red;
+        }
+        /* 第二个是继承，权重最低不生效 */
+        .father {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p class="son">
+            这行文本是什么颜色的？
+        </p>
+
+    </div>
+</body>
+</html>

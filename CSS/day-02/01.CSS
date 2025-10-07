@@ -1,0 +1,5 @@
+/* div里面的span 文字颜色是红色 */
+div span{
+    color: red;
+}
+/* 父子级之间用空格隔开 */

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>权重叠加-第一题</title>
+    <!-- 叠加计算：如果是复合选择器。则需要权重叠加计算 -->
+    <!-- 公式：（每一级之间不存在进位） -->
+    <!-- 行内样式，id选择器个数，类选择器个数，标签选择器个数 -->
+    <!-- 规则：1.从左到右依次比较个数，同一级个数多的优先级高，如果个数相同，则向后比较
+                2.！important权重最高
+                3.继承权重最低 -->
+    <style>
+        /* 三个选择器都具体到了文字所在的选择器，都不是继承 */
+        /* (0,0,2,1) */
+        .c1 .c2 div{
+            color: blue;
+        }
+        /* (0,1,0,1) */
+        div #box3{
+            color: green;
+        }
+        /* (0,1,1,0) */
+        #box1 .c3{
+            color: orange
+        }
+        /* 纵向比较，最终第三个选择器生效 */
+    </style>
+</head>
+<body>
+    <div id="box1" class="c1">
+        <div id="box2" class="c2">
+            <div id="box3" class="c3">
+                这行文本是什么颜色的？
+            </div>
+        </div>
+    </div>
+</body>
+</html>

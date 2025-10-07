@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .div1{
+            background-color: brown;
+        }
+        .div2{
+            background-color: orange
+        }
+
+        span{
+            width: 200px;
+            height: 200px;
+        }
+        .span1{
+            background-color: yellow;
+        }
+        .span2{
+            background-color: green;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+        }
+   </style>
+</head>
+<body>
+    <!-- 块元素 -->
+     <div class="div1">div 标签1</div>
+     <div class="div2">div 标签2</div>
+    <!-- 1.独占一行 -->
+    <!-- 2.宽度默认是父级的100% -->
+    <!-- 3.添加宽高属性生效 -->
+
+
+    <!-- 行内元素 -->
+     <span class="span1">span1</span>
+     <span class="span2">span2</span>
+    <!-- 1.一行可以共存多个 -->
+    <!-- 2.宽度默认是内容的宽度 -->
+    <!-- 3.添加宽高属性不生效 -->
+
+
+    <!-- 行内块元素 -->
+     <img src="./images/1.jpg" alt="">
+     <img src="./images/1.jpg" alt="">
+    <!-- 1.一行可以共存多个 -->
+    <!-- 2.宽度默认是内容的宽度 -->
+    <!-- 3.添加宽高属性生效 -->
+</body>
+</html>

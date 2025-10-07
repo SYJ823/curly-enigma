@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景复合属性</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+
+            /* 语法：background: 背景颜色 背景图 背景平铺方式 背景位置/背景缩放方式 */
+            /* 不区分顺序 */
+            /* 背景图缩放属性前面要加/ */
+            /* background: pink url(./images/2.jpg) no-repeat center bottom/cover; */
+            background: pink url(./images/2.jpg) no-repeat center bottom/contain;
+        }
+    </style>
+</head>
+<body>
+    <div>div 标签</div>
+</body>
+</html>

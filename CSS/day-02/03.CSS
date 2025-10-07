@@ -1,0 +1,5 @@
+/* div、p、span文字颜色是红色 */
+div,p,span{
+    color: red;
+}
+/* 用,连接 */
