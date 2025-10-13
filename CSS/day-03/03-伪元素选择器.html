@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        /* 作用：创建虚拟元素（伪元素），用来摆放装饰性的内容 */
+        /* 语法：选择器::伪元素 */
+        /* 注意点：
+        1. 伪元素必须有内容 content 属性，，用来指定伪元素的内容，如果没有内容，则引号内为空
+        2. 伪元素默认是行内元素，如果需要设置宽高，则必须设置 display 属性为块元素或者行内块元素
+        3. 权重和标签选择器相同 */
+
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+
+        div::before{
+            content: "老鼠";
+
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            display: block;
+        }
+        
+        div::after{
+            /* content: "大米"; */
+
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 标签内容：老鼠爱大米 -->
+    <div>爱</div>
+</body>
+</html>

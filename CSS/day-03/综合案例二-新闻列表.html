@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻列表</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .news{
+            margin: 50px auto;
+            width: 360px;
+            height: 200px;
+           
+
+        }
+        li{
+            list-style: none;
+        }
+        .news .hd a{
+            margin-top: -1px;/* 让边框线对齐 */
+            display: block;
+            width: 48px;
+            height: 34px;
+            background-color: #fff;
+            text-decoration: none;
+            border-top: 3px solid #ff8400;
+            border-right: #dbdee1 solid 1px;
+            text-align: center;
+            line-height: 30px;/* 让文字垂直居中 */
+            color: #333;
+
+           
+        }
+        .news .hd {
+            height: 34px;
+            background-color: #eee;
+            border: 1px solid #dbdee1;
+            border-left: none
+        }
+        .news .bd{
+            padding: 5px;
+        }
+        .news .bd li {
+            padding-left: 15px;
+        }
+        .news .bd li a{
+            padding-left: 20px;
+            color: #666;
+            text-decoration: none;
+            line-height: 24px;
+        }
+        .news .bd li a:hover{
+            color: #ff8400;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+       <div class="hd"><a href="#">新闻</a></div>
+       <div class="bd">
+        <ul>
+            <li><a href="#">嫦娥六号落月</a></li>
+            <li><a href="#">新高铁今日开通</a></li>
+            <li><a href="#">多地降温预警</a></li>
+            <li><a href="#">粮食丰收收官</a></li>
+            <li><a href="#">义诊进社区</a></li>
+            <li><a href="#">非遗展开幕</a></li>
+        </ul>
+       </div>
+    </div>
+</body>
+</html>

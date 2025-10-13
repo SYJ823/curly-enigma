@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型-尺寸计算</title>
+    <!-- 盒子尺寸=内容尺寸+border尺寸+内边距尺寸 -->
+    <!-- 解决方法：1.手动做减法，减掉border/padding尺寸
+                2.內减模式：box-sizing-border-box -->
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            /* width: 160px;
+            height: 160px; */
+            background-color: pink;
+
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>div 标签</div>
+</body>
+</html>
