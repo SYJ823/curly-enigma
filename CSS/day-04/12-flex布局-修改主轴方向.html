@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改主轴方向</title>
+    <style>
+        .box{
+            display: flex;
+
+            flex-direction: column;
+            /* 修改主轴方向：垂直方向；侧轴自动换掉水平方向 */
+
+            justify-content: center;
+            /* 此时主轴在垂直方向，视觉效果为垂直居中 */
+
+            align-items: center;
+            /* 此时侧轴在水平方向，视觉效果为水平居中 */
+
+            width: 150px;
+            height: 120px;
+            background-color: pink;
+        }
+
+        img{
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../day-02/images/1.jpg" alt="">
+        <span>媒体</span>
+    </div>
+</body>
+</html>

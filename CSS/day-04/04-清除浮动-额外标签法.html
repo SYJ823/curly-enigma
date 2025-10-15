@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动-额外标签法（了解）</title>
+    <style>
+        /* 额外标签法：在父级内容最后添加一个块级标签并添加clear属性 */
+        .top{
+            margin: 10px auto;
+            width: 1200px;
+            /* height: 300px; */
+            background-color: pink;
+        }
+
+        .bottom {
+            height: 100px;
+            background-color: brown;
+        }
+
+        .left{
+            float: left;
+            width: 200px;
+            height: 300px;
+            background-color: skyblue;
+        }
+
+        .right{
+            float: right;
+            width: 950px;
+            height: 300px;
+            background-color: orange;
+        }
+
+        .clearfix{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>
