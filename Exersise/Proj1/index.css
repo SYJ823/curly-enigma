@@ -87,11 +87,8 @@ body{
     width: 370px;
 }
 
-.text .right ul{
-    padding: 5px;   
-    
-}
 .text .right ul li{
+    padding: 5px; 
     margin-bottom: 30px;
     background-color: #fff;
     height: 325px;
