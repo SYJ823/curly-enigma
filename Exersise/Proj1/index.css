@@ -1,0 +1,130 @@
+.wrapper{
+    margin: 0 auto;
+    width: 1166px;
+}
+
+body{
+    background-color: #efefef;
+}
+
+.head{
+
+    height: 468px;
+    background-color: #fff;
+}
+
+.head .logo{
+    display: flex;
+    height: 83px;
+    border-bottom: 1px solid #eee;
+}
+
+.head .nav ul{
+    display: flex;
+    height: 45px;
+    line-height: 45px;
+}
+
+.head .nav ul li a{
+    margin-left: 37px;
+    font-size: 14px;
+    color:  #7c7f7f ;
+}
+
+.head .nav ul li .active{
+    color: #f35b3f;
+} 
+.head .nav ul li a:hover{
+    color: #f35b3f;
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top:30px;
+    height: 1103px; 
+}
+.text .left{
+    width: 770px;
+    background-color: #fff;
+}
+.text .left .title{
+    height: 130px;
+}
+
+.text .left .title h1{
+    text-align: center;
+    line-height: 110px;
+    font-size: 35px;
+    font-weight: normal;
+    color: #f35b3f;
+}
+
+.text .left .title .basedate{
+     margin-left: 27px;
+     font-size: 12px;
+     color: grey;
+}
+
+.text .left .title a{
+    color: grey
+}
+
+.text .left .ftext{
+    margin: 0 30px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #303030;
+}
+.text .left .ftext span{
+    color: #7c7f7f;
+}
+
+.text .right{
+    width: 370px;
+}
+
+.text .right ul{
+    padding: 5px;   
+    
+}
+.text .right ul li{
+    margin-bottom: 30px;
+    background-color: #fff;
+    height: 325px;
+}
+
+
+.text .right ul dl{
+    padding: 5px 10px;
+    
+}
+
+.text .right ul dt{
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #f35b3f;
+}
+
+.text .right ul dd{
+    font-size: 14px;
+    color: #303030;
+}
+
+.footer{
+    height: 100px;
+    background-color: #f35b3f;
+}
+
+.footer h4{
+    line-height: 100px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+}
