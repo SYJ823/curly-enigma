@@ -1,0 +1,250 @@
+.wrapper {
+  margin: 0 auto;
+  width: 1240px;
+}
+
+.shortcut {
+  height: 52px;
+  background-color: #333;
+}
+
+.shortcut .wrapper {
+  display: flex;
+  justify-content: flex-end;
+  height: 52px;
+  /* background-color: pink; */
+}
+
+.shortcut ul {
+  display: flex;
+  line-height: 52px;
+}
+
+.shortcut li a {
+  padding: 0 14.5px;
+  border-right: 0.5px solid #999;
+  font-size: 14px;
+  color: #fff;
+}
+
+.shortcut li:last-child {
+  border-right: 0;
+}
+
+.shortcut li .iconfont {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.shortcut li .login {
+  color: #5EB69C;
+}
+
+.header {
+  display: flex;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  height: 88px;
+  /* background-color: pink; */
+}
+
+.logo {
+  margin-right: 41px;
+  width: 200px;
+  height: 88px;
+}
+
+.logo a {
+  display: block;
+  width: 200px;
+  height: 88px;
+  background-image: url(../images/logo.png);
+  font-size: 0;
+}
+
+.nav {
+  margin-top: 33px;
+  margin-right: 28px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  margin-right: 47px;
+}
+
+.nav ul li a {
+  padding-bottom: 10px;
+}
+
+.nav ul li a:hover {
+  border-bottom: 2px solid #5EB69C;
+  color: #5EB69C;
+}
+
+.search {
+  display: flex;
+  margin-top: 33px;
+  margin-right: 45px;
+  width: 170px;
+  height: 34px;
+  border-bottom: 2px solid #F4F4F4;
+}
+
+.search .iconfont {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.search input {
+  flex: 1;
+  width: 0;
+}
+
+.search input::placeholder {
+  font-size: 16px;
+  color: #333;
+}
+
+.cart {
+  margin-top: 32px;
+  position: relative;
+}
+
+.cart .iconfont {
+  font-size: 24px;
+}
+
+.cart i {
+  position: absolute;
+  padding: 0 5.5px;
+  top: 1px;
+  /* right定位右对齐，如果文字多了，向左撑开，可能盖住其他内容 */
+  /* right: 1px; */
+  left: 15px;
+  height: 15px;
+  line-height: 15px;
+  background-color: #E26237;
+  font-size: 14px;
+  color: #FFFEFE;
+  border-radius: 7.5px;
+}
+
+.footer {
+  height: 580px;
+  background-color: #F5F5F5;
+}
+
+.footer .service {
+  height: 178px;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.footer .service ul {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.footer .service li {
+  display: flex;
+  margin: 60px 0;
+  width: 190px;
+  height: 58px;
+}
+
+.footer .service li h5 {
+  margin-right: 20px;
+  width: 58px;
+  height: 58px;
+  background-image: url(../images/sprite.png);
+}
+
+.footer .service li p {
+  line-height: 58px;
+  font-size: 28px;
+}
+
+.footer .service li:nth-child(2) h5 {
+  background-position: 0 -58px;
+}
+
+.footer .service li:nth-child(3) h5 {
+  background-position: 0 -116px;
+}
+
+.footer .service li:nth-child(4) h5 {
+  background-position: 0 -174px;
+}
+
+
+.footer .help {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  height: 300px;
+  /* background-color: pink; */
+}
+
+.footer .help .left {
+  display: flex;
+}
+
+.footer .help .left dl {
+  margin-right: 84px;
+}
+
+.footer .help .left dl:last-child {
+  margin-right: 0;
+}
+
+.footer .help .left dl dt {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.footer .help .left dl dd a {
+  display: block;
+  margin-bottom: 10.5px;
+  color: #969696;
+}
+
+.footer .help .left .iconfont {
+  color: #5EB69C;
+}
+
+.footer .right ul {
+  display: flex;
+}
+
+.footer .right li:first-child{
+  margin-right: 55px;
+}
+
+.footer .right .pic {
+  margin-bottom: 10px;
+  width: 120px;
+  height: 120px;
+}
+
+.footer .right li p{
+  color: #969696;
+  text-align: center;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.copyright p{
+  margin-bottom: 10px;
+  color: #A1A1A1;
+}
+
+.copyright p a{
+  margin: 0 10px;
+  color: #A1A1A1;
+}

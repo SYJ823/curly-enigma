@@ -1,0 +1,91 @@
+/* 首页图 */
+
+/* Banner区域 */
+.banner {
+  height: 500px;
+  background-color: #F5F5F5;
+}
+
+.banner .wrapper {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .pic {
+  display: flex;
+  width: 3720px;
+}
+
+.banner .subnav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.42);
+
+  cursor: pointer;
+}
+
+.banner .subnav li {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 29px;
+  padding-right: 12px;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.banner .subnav li:hover {
+  background-color: #00BE9A;
+}
+
+.banner .subnav a {
+  margin-right: 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.banner .subnav .classify {
+  margin-right: 14px;
+  font-size: 16px;
+}
+
+.banner .subnav .iconfont {
+  font-size: 14px;
+}
+
+.banner ol {
+  position: absolute;
+  bottom: 17px;
+  right: 16px;
+  display: flex;
+}
+
+.banner ol li {
+  margin-left: 8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.banner ol li i {
+  display: block;
+  margin: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner ol .current {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner ol .current i {
+  background-color: rgba(255, 255, 255, 1);
+}
