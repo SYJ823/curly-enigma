@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let input = +prompt(`请您选择操作：
+                    1.取钱
+                    2.存钱
+                    3.查询余额
+                    4.退出`)
+    let balance = 0
+    while(input!==4){
+    switch(input){
+      case 1:
+        let withdraw = +prompt('请输入取钱金额：')
+        balance-=withdraw
+        break
+      case 2:
+        let deposit = +prompt('请输入存钱金额：')
+        balance+=deposit
+        break
+      case 3:
+        alert(`您的账户余额为：${balance}`)
+        break
+      case 4:
+        break
+    }
+    input = +prompt(`请您选择操作：
+                    1.取钱
+                    2.存钱
+                    3.查询余额
+                    4.退出`)
+  }
+  </script>
+</body>
+</html>

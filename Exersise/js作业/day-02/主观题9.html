@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    while(true){
+      let op = prompt('请您选择 + - * / ，如果输入q，则是退出结束程序')
+      if(op==='q'){
+        break
+      }
+      else if(op==='+'){
+        let num1 = +prompt('请输入第一个数字')
+        let num2 = +prompt('请输入第二个数字')
+        alert(num1+num2)
+      }
+      else if(op==='-'){
+        let num1 = +prompt('请输入第一个数字')
+        let num2 = +prompt('请输入第二个数字')
+        alert(num1-num2)
+      }
+      else if(op==='*'){
+        let num1 = +prompt('请输入第一个数字')
+        let num2 = +prompt('请输入第二个数字')
+        alert(num1*num2)
+      }
+      else if(op==='/'){
+        let num1 = +prompt('请输入第一个数字')
+        let num2 = +prompt('请输入第二个数字')
+        alert(num1/num2)
+      }
+    }
+  </script>
+</body>
+</html>
