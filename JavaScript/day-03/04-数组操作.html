@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //改
+    let arr = []
+    console.log(arr);
+    // console.log(arr[0]);
+    arr[0] = 1
+    arr[1] = 5
+
+    let arr2 = ['pink', 'red', 'green']
+    arr2[0] = 'hotpink'
+    console.log(arr2);
+
+    for (let i = 0; i < arr2.length; i++) {
+      arr2[i] = arr2[i] + '老师'
+    }
+
+
+    //增
+    let arr3 = ['pink', 'green']
+    //push 推末尾
+    arr3.push('hotpink')
+    arr3.push('hotpink', 'linghtpink')
+    console.log(arr3);
+    //开头追加
+    arr3.unshift('red')
+    console.log(arr3);
+
+    //删
+    let arr4 = ['pink', 'red', 'green','']
+    //pop() 删除最后一个元素
+    arr4.pop()
+    console.log(arr4);
+    //shift() 删除第一个元素
+    arr4.shift()
+    console.log(arr4);
+    //splice 删除指定元素 splice(起始位置-索引号，删除几个)
+    arr4.splice(1,1)
+    console.log(arr4);
+  </script>
+</body>
+
+</html>
