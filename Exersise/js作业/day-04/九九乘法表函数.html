@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+    span{
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 2px;
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border: 1px solid pink;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px pink;
+    }
+  </style>
+<body>
+  <script>
+    function sheet(){
+      for (let i = 1; i <= 9; i++) {
+      for (let j = 1; j <= i; j++) {
+        let n=j*i
+        document.write(`<span>${j}X${i}=${n}</span>`)
+      }
+      document.write('<br>')
+    }
+    }
+    sheet()
+    sheet()
+    sheet()
+  </script>
+</body>
+</html>

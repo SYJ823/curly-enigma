@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //两个数
+    function maxNum1(x,y){
+      return x>y ? x:y
+    }
+    let max1 = maxNum1(3,5)
+    document.write(max1)
+
+    //数组
+    function maxNum2(arr){
+      let max =arr[0]
+      for(let i=1;i<arr.length;i++){
+        if(arr[i]>max){
+          max=arr[i]
+        }
+      }
+      return max
+    }
+    let arr=[1,2,6,4,9,6,33,5,4,55]
+    let max2 = maxNum2(arr)
+    document.write(max2)
+
+  </script>
+</body>
+</html>

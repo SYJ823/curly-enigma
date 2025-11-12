@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function fn(x, y) {
+      x = x || 0
+      y = y || 0
+      console.log(x + y);
+    }
+    fn(1, 2)//逻辑中断
+    fn()//前面为假，逻辑不中断
+
+    //逻辑中断
+    let age = 18
+    //逻辑与
+    console.log(false && a++);//age++不执行 一假则假
+    console.log(age);//age仍等于18
+    console.log(11 && 22);//都为真，返回最后一个真值
+
+    //逻辑或
+    console.log(true || age++);//age++不执行，一真则真
+    console.log(age);//age仍为18
+    console.log(11 || 22);//都为真，返回第一个真值
+
+
+
+
+  </script>
+</body>
+
+</html>
