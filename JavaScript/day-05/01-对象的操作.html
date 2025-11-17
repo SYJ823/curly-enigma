@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let person = {
+      uname: 'pink老师',
+      age: 18,
+      gender: '女',
+      'hobby': 'basketball'
+    }
+    person.address = '武汉黑马'//增
+    delete person.age//删
+    person.gender = '男'//改
+
+    //查 的两种写法
+    console.log(person.uname);//(1)对象名.属性名
+    console.log(person['hobby']);//(2)对象名['属性名']
+
+
+  </script>
+</body>
+
+</html>
