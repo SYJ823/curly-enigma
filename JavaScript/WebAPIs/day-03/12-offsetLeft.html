@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: relative;/* 相对定位 */
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      margin: 100px;
+    }
+
+    p {
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+      margin: 50px
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p></p>
+  </div>
+  <script>
+    const div = document.querySelector('div')
+    const p = document.querySelector('p')
+    //检测盒子的位置，看最近一级带有定位的祖先元素
+    console.log(div.offsetLeft);//108 body还有8px的外边距
+    console.log(p.offsetLeft);//当父亲无定位时 158 //div加了定位后结果为50
+    
+  </script>
+</body>
+
+</html>

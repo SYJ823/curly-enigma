@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      padding-top: 100px;
+      height: 3000px;
+    }
+    div{
+      display: none;
+      width: 200px;
+      height: 200px;
+      overflow: scroll;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+    我里面有很多文字
+  </div>
+  <script>
+    //页面滚动事件：滚动条在滚动的时候持续触发的事件
+    //事件名：scroll
+
+    //监听整个页面滚动：
+    const div = document.querySelector('div')
+    window.addEventListener('scroll',function(){
+      //执行的操作
+      //1.html元素获取方式：document.documentElement   
+      //为什么要这样获取？ 页面滚动是整个html页面滚动，而不是body，但html不能像body一样用document.html获取，而是document.documentElement
+      const n = document.documentElement.scrollTop
+      console.log(n);
+      //有什么用？
+      if(n>=100){
+        div.style.display='block'//小于100则隐藏
+      }
+    })
+
+    //2.scrollTop/scrollLeft属性
+    div.addEventListener('scroll',function(){
+      console.log(div.scrollTop);//scrollTop 被卷去的头部，滚动了多少像素
+    })
+
+
+  </script>
+</body>
+</html>

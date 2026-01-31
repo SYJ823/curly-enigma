@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <button>点击</button> -->
+  <input type="text">
+  <script>
+    //事件对象：这个对象里有事件触发时的具体相关信息，
+    //         例如点击时，事件对象就存了鼠标在哪个位置信息
+    //语法：元素.addEventListener('click',function(e){})
+    //      e就是事件对象 还可以命名为evt event
+    // const bnt = document.querySelector('button')
+    // bnt.addEventListener('click',function(e){
+    //   console.log(e)
+    // })
+    const input=document.querySelector('input')
+    input.addEventListener('keyup',function(e){
+      console.log(e)
+      console.log(e.key)  //可以回执按的哪个键
+      if(e.key==='Enter'){
+        console.log('我按下的回车键')
+      }
+    })
+  </script>
+</body>
+</html>

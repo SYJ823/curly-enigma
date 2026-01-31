@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+  }
+</style>
+<body>
+  <div></div>
+  <script>
+    //窗口尺寸发生变化时触发事件：resize
+    window.addEventListener('resize',function(){
+      console.log(1);  
+    })
+
+    //获取元素宽高:clientWidth clienthight(不包含margin，边框border，滚动条)
+    const div = document.querySelector('div')
+    console.log(div.clientWidth);
+    
+  </script>
+</body>
+</html>

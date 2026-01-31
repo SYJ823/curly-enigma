@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //事件流：事件完整执行过程中的流动路径
+    //类型：捕获阶段（从外到里）和冒泡阶段（从里到外，主要）
+
+    //1.事件捕获：
+    //概念：从DOM的根元素开始去执行对应的事件
+    //代码：DOM.addEventListenner(事件类型，事件处理函数，是否使用捕获机制)
+    //addEventListenner第三个参数传入true代表是捕获阶段触发（很少使用）
+    //若传入false代表冒泡阶段触发，默认就是false
+
+    //2.事件冒泡：
+    //当一个元素触发事件后，会依次向上调用所有父级元素的同名事件（注意必须是同名事件）
+    //事件冒泡是默认存在的
+    //L2事件监听第三个参数是false，或者默认都是冒泡
+
+    //3.阻止冒泡：
+    //把事件限制在当前元素内
+    //语法：事件源.stopPropagation()
+
+    //4.解绑事件：
+
+    //on事件方式，直接使用null覆盖就可以实现事件的解绑
+    //语法：
+    //绑定事件
+    // btn.onclick = function(){
+    //   alert('点击了')
+    // }
+    //解绑事件
+    // btn.onclick = null
+
+    //addEventListenner方式，必须使用：
+    //removeEventListenner(事件类型,事件处理函数,[获取捕获或者冒泡阶段])  //中括号内容可省略
+    //匿名函数无法解绑
+  </script>
+</body>
+</html>

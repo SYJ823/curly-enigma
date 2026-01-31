@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>点击</button>
+  <script>
+    //事件：在编程时系统发生的动作或者发生的事情，如用户单击一个按钮
+    //事件监听：让程序检查是否有事件发生，一旦触发就立即调用一个函数做出响应
+    const btn = document.querySelector('button')
+
+    //语法：元素对象.addEventlistener('事件类型',要执行的函数)
+    btn.addEventListener('click', function () {
+      alert('你好呀~')
+    })
+
+    //事件监听三要素：1.事件源：哪个DOM元素被事件触发了，要获取dom元素
+    //              2.事件类型：使用什么方式触发，比如鼠标单击click等
+    //              3.事件调用的函数：要做什么事情
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <input type="text">
+  <!--  -->
+  <script>
+    const div =document.querySelector('div')
+    //1.鼠标事件
+    //鼠标经过
+    div.addEventListener('mouseenter',function(){
+      console.log('轻轻的我来了');
+      
+    })
+    //鼠标离开
+    div.addEventListener('mouseleave',function(){
+      console.log('轻轻的我走了');
+      
+    }) 
+
+    //2.焦点事件--表单获得光标
+    //获得焦点
+    const input = document.querySelector('input')
+    input.addEventListener('focus',function(){
+      console.log('有焦点触发');
+      
+    })
+    //失去焦点
+    input.addEventListener('blur',function(){
+      console.log('失去焦点触发');
+      
+    })
+
+    //3.键盘事件
+    //键盘按下触发
+
+  </script>
+</body>
+</html>
