@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div></div>
+  <script>
+    const div = document.querySelector('div')
+    const today = new Date()
+    div.innerHTML=today.toLocaleString()//外面写一遍，消除空白时间
+    setInterval(function() {
+      const today = new Date()
+      div.innerHTML=today.toLocaleString()
+    }, 1000);
+    //div.innerHTML=today.toLocaleString() //2026/1/31 17:22:38
+    //div.innerHTML=today.toLocaleDateString() //2026/1/31
+    //div.innerHTML=today.toLocaleTimeString() //17:25:02
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div></div>
+  <script>
+    const div = document.querySelector('div')
+    function getToday(){
+      const today = new Date()
+      return `今天是${today.getFullYear()}年${today.getMonth()+1}月${today.getDate()}日
+      ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`
+    }
+
+    div.innerHTML=getToday()
+
+    //让时间自动变化
+    setInterval(function(){
+      div.innerHTML=getToday()
+    },1000)
+  </script>
+</body>
+</html>
