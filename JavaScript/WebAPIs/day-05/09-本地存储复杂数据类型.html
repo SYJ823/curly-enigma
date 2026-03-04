@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const obj = {
+      uname:'pink老师',
+      age:18,   
+      gender:'女'
+    }
+    // 1.复杂数据类型存储必须转换为 JSON字符串存储
+    localStorage.setItem('obj',JSON.stringify(obj))
+    //JSON 对象  属性和值有引号，而且同意为双引号
+    // {"uname":"pink老师","age":18,"gender":"女"}
+
+    //取
+    console.log(localStorage.getItem('obj'));
+    
+    //2.把JSON字符串转换为对象
+    console.log(JSON.parse(localStorage.getItem('obj')));
+    
+  </script>
+</body>
+</html>
