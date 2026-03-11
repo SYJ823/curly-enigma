@@ -1,0 +1,50 @@
+<template>
+  <div class="person">
+    <h2>姓名：{{ name }}</h2>
+    <h2>姓名：{{ age }}</h2>
+    <button @click="changeName">修改名字</button>
+    <button @click="changeAge">修改年龄</button>
+    <button @click="showTel">查看联系方式</button>
+  </div>
+</template>
+
+<!-- <script lang="ts"> //专门指定组件名的
+ //JS或TS
+ export default {
+  name:'Person', //组件名
+ }
+</script> -->
+
+<script lang="ts" setup name="Person234"> //专门配置组合式API的  也可以添加一个插件后把组件名写于此
+    
+    //数据  原来是写在data中的，此时的name、age、tel都不是响应式的数据
+    let name = '张三'  
+    let age = 18   
+    let tel = '13888888888'
+
+    //方法
+    function changeName(){
+      name = 'zhang-san' //注意：这样修改name，页面是没有变化的
+      console.log(name) //name确实改了，但页面没有变化
+      
+    }
+    function changeAge(){
+      age += 1  //同name
+    }
+    function showTel(){
+      alert(tel)  //同name
+    }
+
+</script>
+
+<style>
+  .person{
+    background-color: skyblue;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  button {
+    margin: 0 5px;
+  }
+</style>
