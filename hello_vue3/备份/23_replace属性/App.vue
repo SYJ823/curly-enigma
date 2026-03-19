@@ -3,7 +3,7 @@
       <Header></Header>
      <!-- 导航区 -->
       <div class="navigate">
-        <RouterLink to="/home">首页</RouterLink>  
+        <RouterLink to="/">首页</RouterLink>  
         <RouterLink :to="{name:'xinwen'}">新闻</RouterLink>
         <RouterLink replace :to="{path:'/about'}">关于</RouterLink>
         <!-- RouterLink 是 Vue Router 提供的声明式导航组件，
