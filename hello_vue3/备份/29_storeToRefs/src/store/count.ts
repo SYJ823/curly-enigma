@@ -6,6 +6,9 @@ export const useCountStore = defineStore('count', {
     increment(value:any) {
       //修改数据(this是当前的store)
       this.sum+=value
+    },
+    decrement(value:any){
+      this.sum-=value
     }
   },
   //真正存储数据的地方 状态
